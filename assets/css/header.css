@@ -1,0 +1,47 @@
+header {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.header-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header-items nav ul {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.header-items nav li a {
+  color: var(--dark);
+  font-weight: 400;
+  font-size: 17px;
+  transition: 0.3s all ease-in-out;
+}
+.header-items nav li a:hover,
+.ri-search-line:hover,
+.ri-shopping-cart-2-fill:hover {
+  color: var(--green);
+}
+.ri-search-line,
+.ri-shopping-cart-2-fill {
+  color: var(--dark);
+  font-weight: 400;
+  font-size: 18px;
+  transition: 0.3s all ease-in-out;
+}
+.btn-green {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 17px;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 15px 20px;
+  border-radius: 20px;
+}
