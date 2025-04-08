@@ -394,12 +394,13 @@ ol {
   animation: topToBottom 3.5s ease-in-out infinite;
   z-index: 9999;
 }
-.about-content a {
+.about-content a ,.destination-title a{
   color: var(--theme-color);
   font-family: "Dancing Script", cursive;
   background-color: #fef5eb;
   padding: 8px 20px;
   border-radius: 12px;
+  display: inline-flex;
   font-weight: 900;
 }
 .about-content h2 {
@@ -560,6 +561,7 @@ ol {
   position: fixed;
   right: 0;
   top: 50%;
+  z-index: 9999999;
   transform: translateX(100%) translatey(-50%);
   border: 1px solid black;
   padding: 6px;
@@ -594,4 +596,23 @@ h1 {
 
 .slide {
   transform: translate(0, -50%);
+}
+
+
+/* destination */
+
+.destination{
+  padding: 50px 0;
+    background-color:  #F3F8F6;
+}
+
+.destination-title h2{
+  color: var(--text-color);
+  font-size: 50px;
+  letter-spacing: 0.04em;
+  padding: 20px 0;
+}
+.destination-title  span{
+  color: var(--green);
+  font-family: fantasy;
 }
