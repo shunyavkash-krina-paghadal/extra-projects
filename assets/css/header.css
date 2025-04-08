@@ -18,7 +18,7 @@ header {
   gap: 36px;
 }
 .header-items nav li a {
-  color: var(--dark);
+  color: var(--dark-gray);
   font-weight: 400;
   font-size: 17px;
   transition: 0.3s all ease-in-out;
@@ -30,7 +30,7 @@ header {
 }
 .ri-search-line,
 .ri-shopping-cart-2-fill {
-  color: var(--dark);
+  color: var(--dark-gray);
   font-weight: 400;
   font-size: 18px;
   transition: 0.3s all ease-in-out;
@@ -40,8 +40,61 @@ header {
   align-items: center;
   gap: 20px;
   font-size: 17px;
-  background-color: var(--orange);
+  background-color: var(--theme-color);
   color: var(--white);
   padding: 15px 20px;
   border-radius: 20px;
+}
+
+.switch {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 9999;
+  transform: translateX(100%) translateY(-50%);
+  border: 1px solid #333;
+  padding: 6px;
+  transition: 0.4s all;
+  background-color: #fff;
+  border-radius: 6px 0 0 6px;
+}
+.switch.slide {
+  transform: translate(0, -50%) !important;
+}
+
+.switch i {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-right: none;
+  padding: 13px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px 0 0 6px;
+}
+
+.switch ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 6px;
+}
+
+.switch li {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #eee;
+}
+.toggle{
+  background:#202125;
+  font-size:24px;
+  color:#fff;
+  padding:10px 20px;
+  display:none;
 }

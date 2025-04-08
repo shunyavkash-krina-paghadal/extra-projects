@@ -14,6 +14,18 @@
   .search-form {
     margin-right: 0;
   }
+  .about-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 150px;
+  }
+  .about-s-img img {
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    border: 9px solid var(--white);
+    border-radius: 10px;
+  }
 }
 @media (max-width: 767px) {
   .search-form {
@@ -23,32 +35,6 @@
 }
 
 @media (max-width: 575px) {
-  .checkbox {
-    display: block;
-  }
-  .nav-menu.active {
-    display: block;
-    flex-direction: column;
-    position: absolute;
-    background: var(--white);
-    top: 81%;
-    right: 0;
-    left: 0;
-    z-index: 9;
-    height: 100vh;
-    padding: 44px 0;
-  }
-  header nav ul {
-    display: flex;
-    align-items: flex-start;
-    gap: 42px;
-    height: 100%;
-    padding: 47px 0 0 0;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
   .main-slider-three__element__item-one,
   .main-slider-three__element__item,
   .main-slider-three__element__item-two {
@@ -84,12 +70,70 @@
   .hero-content p {
     font-size: 15px;
   }
+  .logo-white img {
+    width: 130px;
+  }
   .herosection {
-    padding: 221px 0 100px 0;
+    padding: 109px 0 100px 0;
   }
   .search-form {
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .about-content h2 {
+    font-size: 34px;
+  }
+  .about-content p {
+    font-size: 14px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+  }
+  .content-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+  }
+  .toggle {
+    display: block;
+  }
+  .active {
+    display: block;
+  }
+
+  header {
+    padding: 0;
+  }
+  .divi {
+    margin-top: 20px;
+  }
+  .travel-img {
+    position: absolute;
+    top: 20px;
+    display: none;
+    right: -40px;
+    animation: scale 4s ease-in-out infinite;
+  }
+  .div-content a {
+    padding: 0;
+    margin-right: 20px;
+  }
+  .div-content {
+    margin: 0;
+  }
+
+  .content-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: inherit;
   }
 }
 @media (max-width: 1199px) {
@@ -102,5 +146,12 @@
   .search-form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1399px) {
+  .about-one__element-two,
+  .about-one__element-one,
+  .about-img::after {
+    display: none;
   }
 }

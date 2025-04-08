@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOUR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -12,7 +13,19 @@
 </head>
 
 <body>
+    <div class="switch">
+        <i class="ri-paint-fill"></i>
+        <ul>
+            <li style="background-color: pink; color:black;"></li>
+            <li style="background-color: purple;margin: 0 5px; color:purple;"></li>
+            <li style="background-color: red; color:red;"></li>
+            <li style="background-color: skyblue;margin: 0 5px; color:skyblue;"></li>
+            <li style="background-color: orange;color:orange;"></li>
 
+        </ul>
+    </div>
+
+    <!-- Header -->
 
     <header>
         <div class="container">
@@ -21,28 +34,26 @@
                     <div class="logo-white">
                         <img src="assets/img/background/logo-dark.webp" alt="logo-white" width="158px" />
                     </div>
+                    <nav>
 
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Tours</a></li>
+                            <li><a href="#">Destinstion</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pages</a></li>
 
-                        <nav><
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Tours</a></li>
-                                <li><a href="#">Destinstion</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Pages</a></li>
-
-                                <a href="#">
-                                    <i class="ri-search-line"></i>
-                                </a>
-                                <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
-                            </ul>
-                        </nav>
-                        <a href="#" class="btn-green">get in touch <i class="ri-send-plane-fill"></i></a>
-                    </div>
+                            <a href="#">
+                                <i class="ri-search-line"></i>
+                            </a>
+                            <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                        </ul>
+                    </nav>
+                    <a href="#" class="btn-green">get in touch <i class="ri-send-plane-fill"></i></a>
                 </div>
             </div>
+        </div>
     </header>
-
     <!-- Herosection -->
 
     <section class="herosection">
@@ -50,7 +61,7 @@
             <div class="hero-inner">
                 <div class="hero-items">
                     <div class="main-slider-three__element__item-three">
-                        <img src="assets/img/background/hero-shapr-1-2-a.webp" alt="element">
+                        <img src="assets/img/background/hero-shapr-1-2-a.webp" alt="element" draggable="false">
                     </div>
                     <div class="main-slider-three__element-three">
                         <span class="main-slider-three__element-three-item"></span>
@@ -58,16 +69,16 @@
                         <span class="main-slider-three__element-three-item"></span>
                     </div>
                     <div class="main-slider-three__element__item-two">
-                        <img src="assets/img/background/hero-shapr-1-3.webp" alt="element">
+                        <img src="assets/img/background/hero-shapr-1-3.webp" alt="element" draggable="false">
                     </div>
                     <div class="main-slider-three__element__item">
-                        <img src="assets/img/background/hero-shapr-1-1.webp" alt="element">
+                        <img src="assets/img/background/hero-shapr-1-1.webp" alt="element" draggable="false">
                     </div>
                     <div class="main-slider-three__element__item-one">
-                        <img src="assets/img/background/hero-shape.webp" alt="element">
+                        <img src="assets/img/background/hero-shape.webp" alt="element" draggable="false">
                     </div>
                     <div class="main-slider-three__element-two">
-                        <img src="assets/img/background/why-choose-tree.webp" alt="element">
+                        <img src="assets/img/background/why-choose-tree.webp" alt="element" draggable="false">
                     </div>
                     <div class="hero-content">
                         <h4>Welcome to Gotur</h4>
@@ -103,7 +114,6 @@
                                 <span class="icon"><i class="ri-ancient-gate-line"></i></span>
                                 <div class="form">
                                     <label class="form-item">
-
                                         <span>Activities Type</span>
                                     </label>
                                     <select>
@@ -129,10 +139,9 @@
                                 <span class="icon"><i class="ri-team-line"></i></span>
                                 <div class="form">
                                     <label class="form-item">
-
                                         <span>Traveler</span>
                                     </label>
-                                    <input type="number" min="1" value="3" />
+                                    <input type="number" min="2" value="3" required/>
                                 </div>
                             </div>
 
@@ -143,7 +152,75 @@
                 </div>
                 <div class="hero-items main-slider-one__item bg">
                     <div class="hero-man">
-                        <img src="assets/img/background/hero-man.webp" width="100%" height="100%" />
+                        <img src="assets/img/background/hero-man.webp" width="100%" height="100%" draggable="false" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Aboutsection -->
+
+    <section class="about">
+        <div class="container">
+            <div class="about-inner">
+                <div class="about-items">
+                    <div class="about-img">
+                        <div class="about-one__element-one">
+                            <img src="assets/img/background/about-1-1 (1).webp" alt="" style="pointer-events: none;">
+                        </div>
+                        <div class="about-one__element-two">
+                            <img src="assets/img/background/about-1-2.webp" alt="" draggable="f" style="pointer-events: none; position: relative; z-index: -1;">
+                        </div>
+                        <img src="assets/img/background/about-1-1.webp" alt="" width="100%" height="100%" style="pointer-events: none;">
+                        <div class="about-s-img">
+                            <img src="assets/img/background/about-s-1-1.webp" alt="" style="pointer-events: none;">
+                        </div>
+                        <div class="travel-img">
+                            <img src="assets/img/background/about-1-3.webp" alt="" width="100px">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-items">
+                    <div class="about-content">
+                        <a href="#">About gotur</a>
+                        <h2>Travel place for Your & your Family</h2>
+                        <p>It is a long established fact that a reader will be distracted the readable content of a page when looking at layout the point.</p>
+                        <div class="list">
+                            <ul>
+                                <li><i class="ri-checkbox-circle-line"></i>Easy & Quick Booking</li>
+                                <li><i class="ri-checkbox-circle-line"></i>Easy & Quick Booking</li>
+                            </ul>
+                            <div class="div-content">
+                                <a href="#" class="">
+                                    <i class="ri-building-line"></i>
+                                </a>
+                                <div class="divi">
+                                    <h5>Mission & Vision</h5>
+                                    <p>Ut vehiculadictumst. Maecenas ante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-bottom">
+                            <div class="btn-oranges-1">
+                                <a href="#">
+                                    <h5>Discover More</h5>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.1642 12L12.9571 5.79291L11.5429 7.20712L16.3358 12L11.5429 16.7929L12.9571 18.2071L19.1642 12ZM13.5143 12L7.30722 5.79291L5.89301 7.20712L10.6859 12L5.89301 16.7929L7.30722 18.2071L13.5143 12Z"></path>
+                                    </svg>
+                                </a>
+
+                            </div>
+                            <div class="call">
+                                <i class="ri-phone-fill"></i>
+                                <a href="tel:+208-555-0112">
+                                    <h5>Call Us Now</h5>
+                                    <p>+208-555-0112</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,6 +228,24 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $(".switch i").click(function () {
+                $(".switch").toggleClass("slide");
+            });
+
+            $(".switch li").click(function () {
+                var color = $(this).css("background-color");
+                $(":root").css("--theme-color", color);
+            });
+
+            $(".switch li").click(function () {
+                var color = $(this).css("color");
+                $(":root").css("--text-color", color);
+            });
+        });
+
+    </script>
 </body>
 
 </html>
