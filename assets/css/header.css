@@ -1,10 +1,10 @@
 header {
-  padding: 20px 0;
-  position: absolute;
-  width: 100%;
+  padding: 30px 0;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  width: 100%;
+  z-index: 9999999;
 }
 .header-items {
   display: flex;
@@ -44,4 +44,67 @@ header {
   color: var(--white);
   padding: 15px 20px;
   border-radius: 20px;
+}
+input#switch {
+  display: none;
+}
+.checkbox {
+  display: none;
+}
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 65px;
+  height: 39px;
+  background: var(--green);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+/* input:checked + label {
+  background: var(--orange);
+} */
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 30px;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  /* background: var(--green); */
+  display: inline-block;
+  border-radius: 100px;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.toggle-btn:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+    /* background: #fff; */
+  border-radius: 90px;
+  transition: 0.3s;
 }

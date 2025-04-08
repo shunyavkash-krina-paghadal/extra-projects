@@ -1,5 +1,106 @@
-@media (max-width:991px) {
-    .header-items nav ul{
-        display: none   ;
-    }
+@media (max-width: 991px) {
+  .header-items nav ul {
+    display: none;
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .hero-man img {
+    display: none;
+  }
+  .search-form {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .search-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .checkbox {
+    display: block;
+  }
+  .nav-menu.active {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    background: var(--white);
+    top: 81%;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    height: 100vh;
+    padding: 44px 0;
+  }
+  header nav ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 42px;
+    height: 100%;
+    padding: 47px 0 0 0;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-slider-three__element__item-one,
+  .main-slider-three__element__item,
+  .main-slider-three__element__item-two {
+    display: none;
+  }
+  .btn-green {
+    display: none;
+  }
+  .hero-content h1 {
+    font-size: 54px;
+    max-width: 600px;
+    color: var(--dark);
+    font-weight: 700;
+  }
+  .main-slider-three__element-three-item {
+    bottom: 399px;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    width: 652px;
+    height: 733px;
+    background: var(--gotur-primary, #f7921e);
+    opacity: 0.1;
+    border-radius: 324px 0px 0px 324px;
+  }
+
+  .button {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .hero-content p {
+    font-size: 15px;
+  }
+  .herosection {
+    padding: 221px 0 100px 0;
+  }
+  .search-form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media (max-width: 1199px) {
+  .search-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .search-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
