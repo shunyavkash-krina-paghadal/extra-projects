@@ -28,9 +28,15 @@
   }
 }
 @media (max-width: 767px) {
-  .search-form {
+  .search-bar {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .offer-card {
+    width: inherit;
+  }
+  .destinations-two__element {
+    display: none;
   }
 }
 
@@ -76,10 +82,7 @@
   .herosection {
     padding: 109px 0 100px 0;
   }
-  .search-form {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
+
   .about-content h2 {
     font-size: 34px;
   }
@@ -98,6 +101,17 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
+  }
+  .sidebar-content {
+    background-color: var(--green);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    overflow-y: scroll;
+    max-width: 100%;
   }
   nav ul li {
     display: block;
@@ -129,11 +143,50 @@
   .div-content {
     margin: 0;
   }
-
+  .destination-title h2 {
+    color: var(--text-color);
+    font-size: 42px;
+    letter-spacing: 0.04em;
+    padding: 20px 0;
+  }
   .content-bottom {
     display: flex;
     align-items: flex-start;
     justify-content: inherit;
+  }
+  .destinations-two__element img {
+    display: none;
+  }
+  .offer-image,
+  .offer-image1 {
+    display: none;
+  }
+  .offer-text {
+    /* position: absolute; */
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: #63ab45;
+    color: white;
+    padding: 60px 40px;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 20px;
+    clip-path: inherit;
+  }
+  .offer-text1 {
+    position: absolute;
+    clip-path: inherit;
+    width: 100% !important;
+  }
+  .offer-title h3 {
+    font-size: 39px;
+    padding: 20px 0;
+    text-align: left;
+  }
+  .offer-title {
+    text-align: left;
   }
 }
 @media (max-width: 1199px) {
@@ -141,11 +194,23 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+  .offer-two-thumb {
+    display: none;
+  }
+  .offer-two-funfact {
+    position: absolute;
+    right: 0 !important;
+    top: 55%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+  }
 }
 @media (max-width: 1024px) {
-  .search-form {
+  .search-bar {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
+    padding: 40px;
   }
 }
 @media (max-width: 1399px) {
@@ -153,5 +218,13 @@
   .about-one__element-one,
   .about-img::after {
     display: none;
+  }
+}
+@media (max-width: 1240px) {
+  .offer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
   }
 }
